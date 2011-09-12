@@ -1,0 +1,7 @@
+This is a Python 2.6+ or Python 3.x library for serving up a WSGI app
+from a program launched by a super-server such as inetd to handle
+a single SCGI request.
+
+A writeup on how you'd use this program is at
+
+    http://diskcompare.com/blog/entries/running-python-wsgi-apps-scgi-and-inetd/
