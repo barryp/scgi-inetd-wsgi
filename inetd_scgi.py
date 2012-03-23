@@ -74,6 +74,11 @@ def read_netstring(f):
             raise ProtocolError('EOF reading netstring')
         data.append(s)
         size -= len(s)
+
+    ch = f.read(1)
+    if ch != ',':
+        raise ProtocolError("Invalid netstring, expected comma at the end, got %s" % repr(ch))
+
     return b''.join(data)
 
 
