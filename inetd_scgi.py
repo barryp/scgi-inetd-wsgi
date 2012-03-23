@@ -151,7 +151,7 @@ def run_app(app, stderr=None):
     #
     # For Python 3.x, change stdin/stderr to binary mode
     #
-    if sys.version_info.major >= 3:
+    if sys.version_info[0] >= 3:
         sys.stdin = sys.stdin.detach()
         sys.stdout = sys.stdout.detach()
 
